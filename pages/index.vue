@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <header />
+    <Header />
   </div>
 </template>
 
@@ -16,7 +16,10 @@ export default {
 .wrapper {
   max-width: 768px;
   margin: 0 auto;
-
-  border: solid red 1px;
+  padding: 5rem 0;
+  /*
+  border-left: solid red 1px;
+  border-right: solid red 1px;
+  */
 }
 </style>
