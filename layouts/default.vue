@@ -5,10 +5,13 @@
 </template>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 :root {
   --black: #353b48;
   --white: #f5f6fa;
+  --blue: #273c75;
+  --grey: #35495e;
+  --green: #42b883;
+  --radius: 24px;
 }
 
 *,
@@ -25,8 +28,27 @@ html {
 }
 
 body {
-  background: var(--black);
-  color: var(--white);
+  background: var(--white);
+  color: var(--black);
   font-family: "Inter", sans-serif;
+}
+
+.nuxt-link-exact-active::after {
+  margin-top: 2px;
+  display: block;
+  content: '';
+  background: var(--green);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.radius {
+  border-radius: var(--radius);
 }
 </style>
