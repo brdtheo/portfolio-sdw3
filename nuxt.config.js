@@ -2,6 +2,8 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  router: { base: '/portfolio-sdw3/' },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'portfolio-sdw3',
@@ -39,7 +41,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
+      lang: 'fr'
     }
   },
 
