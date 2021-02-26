@@ -19,7 +19,7 @@
 
       <nav class="social">
         <ul>
-          <li v-for="(e, i) in socialLinks" :key="i">
+          <li class="radius-small" v-for="(e, i) in socialLinks" :key="i">
             <a :href="e.url">
               <i class="bx" :class="e.icon"> </i>
             </a>
@@ -104,7 +104,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
+  display: inline-flex;
 }
 
 .links ul li {
@@ -118,10 +118,34 @@ nav ul li {
 }
 
 .social {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
+  display: flex;
+  align-self: stretch;
+}
+
+.social ul {
+  display: grid;
+  gap: 1rem;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
 .social ul li {
-  margin: 0 0.4rem;
+  background: var(--green);
+  width: 45px;
+  overflow: hidden;
+}
+
+.social ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background-color ease-in 130ms;
+}
+
+.social ul li a:hover {
+  background: var(--green-darken);
 }
 </style>
