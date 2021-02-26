@@ -28,7 +28,11 @@
     </div>
     <ul class="repos-content shadow radius" v-else-if="type == 2">
       <li class="radius" v-for="(repo, i) in repos" :key="i">
-        {{ repo.name }}
+        <a :href="repo.html_url">
+          <h2>{{ repo.name }}</h2>
+          <span class="badge-sm">{{ repo.language }}</span>
+          <p>{{ repo.description }}</p>
+        </a>
       </li>
     </ul>
     <div class="experience-content shadow radius" v-else-if="type == 3">
@@ -86,6 +90,14 @@ h1 {
   margin-bottom: 1.8rem;
 }
 
+h2 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
 .about-content,
 .repos-content,
 .experience-content {
@@ -115,9 +127,23 @@ ul {
 }
 
 li {
+  overflow: hidden;
   list-style: none;
+}
+
+li a {
+  display: inherit;
   background: var(--white);
-  padding: 0.4rem 1.6rem;
+  padding: 1.8rem 1.6rem;
   min-height: 10rem;
+  transition: background-color ease-in 130ms;
+}
+
+li a:hover {
+  background: var(--white-darken);
+}
+
+li a p {
+  font-size: 1.4rem;
 }
 </style>
