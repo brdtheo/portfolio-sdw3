@@ -4,12 +4,12 @@
   --blue: #273c75;
   --grey: #35495e;
   --green: #42b883;
+  --green-darken: #3BA575;
   --radius: 2.4rem;
+  --radius-small: 1.6rem;
 }
 
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -43,4 +43,8 @@ a {
 
 .radius {
   border-radius: var(--radius);
+}
+
+.radius-small {
+  border-radius: var(--radius-small);
 }
