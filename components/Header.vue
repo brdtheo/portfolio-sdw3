@@ -12,7 +12,7 @@
       <nav class="links">
         <ul>
           <li v-for="(e, i) in internalLinks" :key="i">
-            <nuxt-link class="link" :to="e.to"> {{ e.text }} </nuxt-link>
+            <nuxt-link class="link" :to="`#${e.to}`"> {{ e.text }} </nuxt-link>
           </li>
         </ul>
       </nav>
