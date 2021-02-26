@@ -2,13 +2,17 @@
   <header class="header-container radius">
     <div class="header-content">
       <figure>
-        <img class="radius" src="~/assets/profile-picture.jpeg" alt="profile picture" />
+        <img
+          class="radius"
+          src="~/assets/profile-picture.jpeg"
+          alt="profile picture"
+        />
       </figure>
 
       <nav class="links">
         <ul>
           <li v-for="(e, i) in localLinks" :key="i">
-            <nuxt-link class="link" :to="e.to">{{ e.text }}</nuxt-link>
+            <nuxt-link class="link" :to="e.to"> {{ e.text }} </nuxt-link>
           </li>
         </ul>
       </nav>
@@ -16,7 +20,7 @@
       <nav class="social">
         <ul>
           <li class="radius-small" v-for="(e, i) in socialLinks" :key="i">
-            <a :href="e.url">
+            <a :href="e.url" :title="e.title">
               <i class="bx" :class="e.icon"> </i>
             </a>
           </li>
@@ -50,19 +54,23 @@ export default {
       socialLinks: [
         {
           icon: "bxl-github",
-          url: "https://github.com/brdtheo"
+          url: "https://github.com/brdtheo",
+          title: "GitHub"
         },
         {
           icon: "bxl-codepen",
-          url: "https://codepen.io/theo-billardey"
+          url: "https://codepen.io/theo-billardey",
+          title: "Codepen"
         },
         {
           icon: "bxl-linkedin",
-          url: "https://www.linkedin.com/in/theo-billardey/"
+          url: "https://www.linkedin.com/in/theo-billardey/",
+          title: "LinkedIn"
         },
         {
           icon: "bx-envelope",
-          url: "mailto:theo.billardey@gmail.com"
+          url: "mailto:theo.billardey@gmail.com",
+          title: "Send email"
         }
       ]
     };
