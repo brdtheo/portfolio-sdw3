@@ -18,6 +18,11 @@ export default {
         rel: "stylesheet",
         href:
           "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap"
       }
     ]
   },
