@@ -1,14 +1,37 @@
 <template>
   <div class="wrapper">
-    <Header />
+    <Header :internalLinks="internalLinks" />
+    <main>
+      <Section v-for="(e, i) in internalLinks" :key="i" :title="e.text" />
+    </main>
   </div>
 </template>
 
 <script>
 import Header from "~/components/Header";
+import Section from "~/components/Section";
 
 export default {
-  components: { Header }
+  components: { Header, Section },
+
+  data() {
+    return {
+      internalLinks: [
+        {
+          text: "About me",
+          to: "#about"
+        },
+        {
+          text: "Work",
+          to: "#work"
+        },
+        {
+          text: "Experience",
+          to: "#experience"
+        }
+      ]
+    };
+  }
 };
 </script>
 
@@ -17,9 +40,9 @@ export default {
   max-width: 768px;
   margin: 0 auto;
   padding: 5rem 0;
-  /*
-  border-left: solid red 1px;
-  border-right: solid red 1px;
-  */
+}
+
+main {
+  padding-top: 10rem;
 }
 </style>

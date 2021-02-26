@@ -11,7 +11,7 @@
 
       <nav class="links">
         <ul>
-          <li v-for="(e, i) in localLinks" :key="i">
+          <li v-for="(e, i) in internalLinks" :key="i">
             <nuxt-link class="link" :to="e.to"> {{ e.text }} </nuxt-link>
           </li>
         </ul>
@@ -34,23 +34,14 @@
 export default {
   name: "Header",
 
+  props: {
+    internalLinks: {
+      type: Array
+    }
+  },
+
   data() {
     return {
-      localLinks: [
-        {
-          text: "About me",
-          to: "#about"
-        },
-        {
-          text: "Work",
-          to: "#work"
-        },
-        {
-          text: "Experience",
-          to: "#experience"
-        }
-      ],
-
       socialLinks: [
         {
           icon: "bxl-github",
