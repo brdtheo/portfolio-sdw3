@@ -1,5 +1,5 @@
 <template>
-  <header class="header-container radius">
+  <header class="header-container shadow radius">
     <div class="header-content">
       <figure>
         <img
@@ -72,7 +72,7 @@ export default {
 <style scoped>
 .header-container {
   padding: 1rem;
-  box-shadow: 0.2rem 0.2rem 1.4rem 2px rgba(40, 40, 40, 0.12);
+  background: #fff;
 }
 
 .header-content {
