@@ -2,11 +2,7 @@
   <header class="header-container radius">
     <div class="header-content">
       <figure>
-        <img
-          class="radius"
-          src="https://randomuser.me/api/portraits/men/78.jpg"
-          alt=""
-        />
+        <img class="radius" src="~/assets/profile-picture.jpeg" alt="profile picture" />
       </figure>
 
       <nav class="links">
