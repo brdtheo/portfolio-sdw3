@@ -39,11 +39,15 @@ export default {
       localLinks: [
         {
           text: "About me",
-          to: "#work"
+          to: "#about"
         },
         {
           text: "Work",
           to: "#work"
+        },
+        {
+          text: "Experience",
+          to: "#experience"
         }
       ],
 
