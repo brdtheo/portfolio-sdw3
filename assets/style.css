@@ -8,6 +8,7 @@
   --green-darken: #3BA575;
   --radius: 2.4rem;
   --radius-small: 1.6rem;
+  --radius-xs: 1.2rem;
 }
 
 *, *::before, *::after {
@@ -49,6 +50,10 @@ a {
 
 .radius-small {
   border-radius: var(--radius-small);
+}
+
+.radius-xs {
+  border-radius: var(--radius-xs);
 }
 
 .shadow {
