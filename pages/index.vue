@@ -58,7 +58,6 @@ export default {
     me.listRepos(function(err, repos) {
       repos.forEach(e => {
         if (!e.private && !e.archived && e.owner.login == "brdtheo") {
-          console.log(e);
           vm.repositories.push(e);
         }
       });
