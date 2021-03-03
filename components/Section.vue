@@ -3,17 +3,17 @@
     <h1>{{ title }}</h1>
     <div class="about-content shadow radius" v-if="type == 1">
       <p>
-        Hello everyone 👋
+        Hello 👋
       </p>
       <p>
-        I'm Théo Billardey and i'm a 20 years old student in web development.
-        I'm currently working on the
+        I'm Théo Billardey, a 20 years old student in web development. I'm
+        currently working on the
         <a class="badge" :href="links.mim.url" :title="links.mim.title">
           {{ links.mim.text }}
         </a>
-        project with Meteor, Vue and Quasar. I'm also working on side projects
-        involving frameworks, libraries that i'm interested in. that you can
-        discover below. You can also take a look at
+        project with Meteor, Vue and Quasar. I'm also working on side
+        projects that you can discover below involving interesting frameworks and
+        libraries. You can also take a look at
         <a class="badge" :href="links.codepen.url" :title="links.codepen.title">
           {{ links.codepen.text }}
         </a>
