@@ -39,6 +39,11 @@ export default {
           text: "Experience",
           to: "experience",
           sectionType: 3
+        },
+        {
+          text: "Skills",
+          to: "skills",
+          sectionType: 4
         }
       ],
 
