@@ -3,27 +3,27 @@
     <h1>{{ title }}</h1>
     <div class="about-content shadow radius" v-if="type == 1">
       <p>
-        Hello 👋
+        Bonjour 👋
       </p>
       <p>
-        I'm Théo Billardey, a 20 years old student in web development. I'm
-        currently working on the
+        Je suis Théo Billardey, un étudiant de 20 ans en développement web. Je
+        travaille actuellement sur
         <a class="badge" :href="links.mim.url" :title="links.mim.title">
           {{ links.mim.text }}
         </a>
-        project with Meteor, Vue and Quasar. I'm also working on side projects
-        that you can discover below involving interesting frameworks and
-        libraries. You can also take a look at
+        avec Meteor, Vue et Quasar. Je travaille aussi sur des projets en
+        parrallèle avec des frameworks et librairies intéressantes que vous
+        pouvez découvrir en dessous. Vous pouvez aussi allez voir
         <a class="badge" :href="links.codepen.url" :title="links.codepen.title">
           {{ links.codepen.text }}
         </a>
-        since i sometimes like to build cool tiny interfaces.
+        puisqu'il m'arrive de réaliser quelques fois de petites interfaces.
       </p>
       <p>
-        I'm planning to sort of master Vue.js in a few years to build awesome
-        web apps 🤓<br />
-        I'm also interested in UI design since it's very important and it's part
-        of the user experience.
+        Il est prévu que je maîtrise Vue.js dans quelques années pour construire
+        de superbes applis web 🤓<br />
+        Je suis également intéressé par le UI design qui est très important et
+        qui prend place dans l'expérience utilisateur.
       </p>
     </div>
     <ul class="repos-content shadow radius" v-else-if="type == 2">
@@ -93,7 +93,7 @@ export default {
           title: "Visit made in menu on GitHub"
         },
         codepen: {
-          text: "my codepen profile",
+          text: "mon profil codepen",
           url: "https://codepen.io/theo-billardey",
           title: "brdtheo on codepen"
         }

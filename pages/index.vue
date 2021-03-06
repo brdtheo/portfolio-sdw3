@@ -26,22 +26,22 @@ export default {
     return {
       internalLinks: [
         {
-          text: "About me",
+          text: "Infos",
           to: "about",
           sectionType: 1
         },
         {
-          text: "Work",
+          text: "Réalisations",
           to: "work",
           sectionType: 2
         },
         {
-          text: "Experience",
+          text: "Expérience",
           to: "experience",
           sectionType: 3
         },
         {
-          text: "Skills",
+          text: "Compétences",
           to: "skills",
           sectionType: 4
         }
