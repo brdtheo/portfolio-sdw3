@@ -107,3 +107,4 @@ dist
 
 # GitHub token
 token.js
+static/sw.js
