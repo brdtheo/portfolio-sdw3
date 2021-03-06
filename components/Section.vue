@@ -17,7 +17,7 @@
         <a class="badge" :href="links.codepen.url" :title="links.codepen.title">
           {{ links.codepen.text }}
         </a>
-        since i like to build tiny cool interfaces sometimes.
+        since i sometimes like to build cool tiny interfaces.
       </p>
       <p>
         I'm planning to sort of master Vue.js in a few years to build awesome
