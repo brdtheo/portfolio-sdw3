@@ -61,6 +61,7 @@ a {
 }
 
 .badge, .badge-sm {
+  width: fit-content;
   display: inline-block;
   background: var(--green);
   color: rgba(255, 255, 255, .9);
