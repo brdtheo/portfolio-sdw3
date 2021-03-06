@@ -67,6 +67,12 @@ export default {
         }
       });
     });
+  },
+
+  head() {
+    return {
+      title: "Théo Billardey - Student & Front End web developer"
+    };
   }
 };
 </script>
